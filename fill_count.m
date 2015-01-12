@@ -34,6 +34,7 @@ for i=1:16,
                 topy = queue(1,2);
                 queue = queue(3:end);
                 
+                % we disregard the islands that start around the border
                 if topx == 0 || topx == 16 || topy == 0 || topy == 15,
                     key = 1;
                 end
